@@ -1,0 +1,32 @@
+.App {
+   text-align: center;
+   
+}
+body{
+   background-image:url(https://www.itl.cat/pngfile/big/9-94735_rick-and-morty-desktop-wallpapers-1920x1080-rick-and.jpg);
+   background-position: center center; 
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: #999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.Title{
+   
+   width: 45rem;
+   align-items: center;
+   justify-content: center;
+   margin-left: 70px;
+   margin-top: -60px;
+}
+
+@media screen and (max-width: 500px ){
+  
+ .Title{
+   width:10rem ;
+  
+ } 
+}
