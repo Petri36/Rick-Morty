@@ -1,8 +1,8 @@
 import "./App.css";
 import Cards from "./components/Cards.jsx";
-import BarraSup from "./components/NavSup/BarraSup.jsx";
 import About from "./components/About/About.jsx";
 import Detail from "./components/Detail/Detail.jsx";
+import BarraSup from "./components/NavSup/BarraSup.jsx";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 

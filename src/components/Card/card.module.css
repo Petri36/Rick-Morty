@@ -2,11 +2,11 @@
   display: inline-block;
   background-image: linear-gradient(
     to left,
-    #6200ffb9,
-    #7c68eeb9,
-    #3498dbbd,
-    #2ecc70b8,
-    #00dbeb88
+    #ffc400b9,
+    #ccac1e,
+    #aa9832,
+    #9b966f,
+    #6d6a50
   );
   margin: 15px;
   padding: 1rem;
@@ -14,6 +14,7 @@
   transition: all 300ms;
   border: solid black;
 }
+
 .Carta:hover {
   transform: scale(1.01);
 }
