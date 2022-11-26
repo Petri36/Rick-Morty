@@ -18,14 +18,14 @@ export default function SearchBar(props) {
       />
 
       <button className={s.Button} onClick={() => props.onSearch(id)}>
-        <span className={s.Span}>AGREGAR</span>
+        <span className={s.Span}>ADD</span>
       </button>
 
       <button
         className={s.Button2}
         onClick={() => props.onSearch(Math.floor(Math.random() * 826))}
       >
-        <span className={s.Span}>CUALQUIERA</span>
+        <span className={s.Span}>RANDOM</span>
       </button>
     </div>
   );
