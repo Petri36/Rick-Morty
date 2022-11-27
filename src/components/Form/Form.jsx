@@ -57,7 +57,9 @@ export default function Form(props) {
           <p className={s.error}>{errors.password ? errors.password : null}</p>
         </div>
 
-        <button>Login</button>
+        <button 
+        type="submit"
+        className={s.button}>Login</button>
       </form>
     </div>
   );

@@ -43,7 +43,7 @@ export default function Detail() {
       <div>
         <button
           onClick={() => {
-            navigate("/");
+            navigate("/home");
           }}
         >
           VOLVER
