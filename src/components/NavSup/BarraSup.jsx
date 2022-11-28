@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import s from "./barraSup.module.css";
 
 export default function BarraSup(props) {
+  const { logout } = props
   return (
     <div className={s.barra1}>
       <nav className={s.nav1}>
@@ -18,6 +19,14 @@ export default function BarraSup(props) {
           <button className={s.botonSup2}>
             <span className={s.spanSup2}>HOME</span>
           </button>
+
+
+          <button onClick={() => logout()}
+          className={s.button}>
+            Logout
+          </button>
+
+
         </NavLink>
       </nav>
     </div>

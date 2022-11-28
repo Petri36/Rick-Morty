@@ -6,6 +6,7 @@ import BarraSup from "./components/NavSup/BarraSup.jsx";
 import { useState, useEffect} from "react";
 import { Routes, Route, useLocation, useNavigate} from "react-router-dom";
 import Form from "./components/Form/Form";
+import Nav from "./components/Nav.jsx";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -28,16 +29,20 @@ function App() {
     }
   }
 
+  function logout() {
+    setAccess(false);
+    navigate("/");
+}
+
   useEffect(() => {
     !access && navigate("/");
   }, [access]);
 
   return (
     <div className="App" style={{ padding: "25px" }}>
-      <div>{location.pathname !== "/" && <BarraSup/>}</div>
+      <div>{location.pathname !== "/" && <BarraSup logout={logout}/>}</div>
       <Routes>
         <Route path="/" element={<Form login={login} />} />
-
         <Route
           path="/home"
           element={<Cards characters={characters} onClose={onClose} />}

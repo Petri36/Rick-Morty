@@ -33,7 +33,9 @@ export default function Form(props) {
   };
 
   return (
-      <div style={{ padding: "140px" }}>
+      <div 
+      style={{ padding: "160px" }}
+      >
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="" className={s.fuente}>

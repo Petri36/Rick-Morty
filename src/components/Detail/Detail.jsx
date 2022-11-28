@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import React from "react";
+import s from './Detail.module.css'
 
 export default function Detail() {
   const { id } = useParams();
@@ -32,22 +33,26 @@ export default function Detail() {
     <h1>CARGANDO</h1>
   ) : (
     <div>
-      <h1>NAME:{character.name}</h1>
-      <h2>STATUS:{character.status}</h2>
-      <h2>SPECIE:{character.species}</h2>
-      <h2>GENDER:{character.gender}</h2>
-      <h2>ORIGIN:{character.origin.name}</h2>
-      <div>
-        <img src={character.image} alt="" />
-      </div>
-      <div>
-        <button
-          onClick={() => {
-            navigate("/home");
-          }}
-        >
-          VOLVER
-        </button>
+      <div className={s.cartaDetalle}>
+        <h1>Nombre: {character.name}</h1>
+        <div>
+          <img className={s.imgDetalle} src={character.image} alt="" />
+        </div>
+        <h2>Estado: {character.status}</h2>
+        <h2>Especie: {character.species}</h2>
+        <h2>Genero: {character.gender}</h2>
+        <h2>Origen: {character.origin.name}</h2>
+
+        <div className={s.barraBoton}>
+          <button
+            className={s.botonDetalle}
+            onClick={() => {
+              navigate("/home");
+            }}
+          >
+            <span className={s.spanDetalle}>VOLVER</span>
+          </button>
+        </div>
       </div>
     </div>
   );
