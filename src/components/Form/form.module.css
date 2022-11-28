@@ -1,3 +1,15 @@
+/*body{
+  background-image:url(https://i.pinimg.com/originals/e1/d7/28/e1d728d9617335cdd31c82c4e40c1d9c.png);
+  background-position: center center; 
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+
 @keyframes glowing {
     0%{
         background-position: 0 0;
@@ -11,7 +23,7 @@
 }
 
 .button{
-    background: grey;
+    background: rgb(41, 41, 41);
     cursor: pointer;
     border: none;
     padding: 5px 25px;
@@ -45,3 +57,63 @@
 .error{
     color: red
 }
+
+
+.inputuser {
+    background-color: rgb(41, 41, 41);
+    color:aqua;
+    max-width: 250px;
+    height: 15px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgb(249, 255, 85);
+  }
+  
+  .inputuser:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+
+  
+  .inputpass {
+    background-color:rgb(41, 41, 41);
+    color:aqua;
+    max-width: 250px;
+    height: 15px;
+    width:100%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgb(249, 255, 85);
+  }
+  
+  .inputpass:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+  .fuente{
+    width: 600px;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-variant-ligatures: normal;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  
