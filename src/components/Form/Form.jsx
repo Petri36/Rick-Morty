@@ -28,7 +28,8 @@ export default function Form(props) {
     );
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     props.login(userData);
   };
 
