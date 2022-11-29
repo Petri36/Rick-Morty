@@ -12,7 +12,7 @@ export default function SearchBar(props) {
     <div className={s.Barra}>
       <input
         className={s.Input}
-        placeholder="Numero del 1 - 826"
+        placeholder="Número del 1 al 826"
         type="search"
         onChange={infoInput}
       />

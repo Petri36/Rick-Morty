@@ -1,0 +1,24 @@
+.Carta {
+    display: inline-block;
+    background-image: linear-gradient(
+      to left,
+      #ffc400b9,
+      #ccac1e,
+      #aa9832,
+      #9b966f,
+      #6d6a50
+    );
+    margin: 15px;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: all 300ms;
+    border: solid black;
+  }
+  
+  .Carta:hover {
+    transform: scale(1.01);
+  }
+  
+  .Img {
+    border-radius: 20px;
+  }
