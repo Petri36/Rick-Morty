@@ -7,6 +7,7 @@ import { useState, useEffect} from "react";
 import { Routes, Route, useLocation, useNavigate} from "react-router-dom";
 import Form from "./components/Form/Form";
 import Nav from "./components/Nav.jsx";
+import Favorites from "./components/Favorites/Favorites";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -48,6 +49,7 @@ function App() {
           element={<Cards characters={characters} onClose={onClose} />}
         />
         <Route path="/about" element={<About />} />
+        <Route path="/favorites" element={<Favorites />} />
         <Route path="/detail/:id" element={<Detail />} />
       </Routes>
     </div>
