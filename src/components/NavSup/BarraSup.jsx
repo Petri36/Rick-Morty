@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Nav from "../Nav";
 import s from "./barraSup.module.css";
 
 export default function BarraSup(props) {
@@ -11,7 +10,7 @@ export default function BarraSup(props) {
         <div>
           <NavLink to={"/about"}>
             <button className={s.botonSup1}>
-              <span className={s.spanSup1}>NOSOTROS</span>
+              <span className={s.spanSup1}>ABOUT</span>
             </button>
           </NavLink>
         </div>
