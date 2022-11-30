@@ -4,16 +4,16 @@ import { Card } from "../Card/Card"
 export function Favorites({ myFavorites }) {
   return (
     <div>
-      {myFavorites?.map((character, index) => {
+      {myFavorites?.map((e, index) => (
         <Card
-          name={character.name}
-          id={character.id}
-          species={character.species}
-          gender={character.gender}
-          image={character.image}
-          key={index}
-        />;
-      })}
+        name={e.name}
+        id={e.id}
+        species={e.species}
+        gender={e.gender}
+        image={e.image}
+        key={e.id}
+        />
+      ))}
     </div>
   );
 }
