@@ -6,7 +6,6 @@ import BarraSup from "./components/NavSup/BarraSup.jsx";
 import { useState, useEffect} from "react";
 import { Routes, Route, useLocation, useNavigate} from "react-router-dom";
 import Form from "./components/Form/Form";
-import Nav from "./components/Nav.jsx";
 import Favorites from "./components/Favorites/Favorites";
 
 function App() {
@@ -37,12 +36,14 @@ function App() {
 
   useEffect(() => {
     !access && navigate("/");
-  }, [access]);
+  }, [access, navigate]);
 
+  
   return (
     <div className="App" style={{ padding: "25px" }}>
       <div>{location.pathname !== "/" && <BarraSup logout={logout}/>}</div>
       <Routes>
+
         <Route path="/" element={<Form login={login} />} />
         <Route
           path="/home"

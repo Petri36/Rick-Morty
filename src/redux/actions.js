@@ -1,9 +1,9 @@
 import { ADD_FAVORITES, DELETE_FAVORITES } from "./types";
 
-export function addFavorites(id) {
+export function addFavorites(character) {
   return {
     type: ADD_FAVORITES,
-    payload: id,
+    payload: character,
   };
 }
 

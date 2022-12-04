@@ -1,28 +1,27 @@
-import { connect } from "react-redux"
-import { Card } from "../Card/Card"
+import { connect } from "react-redux";
+import { Card } from "../Card/Card";
 
 export function Favorites({ myFavorites }) {
   return (
     <div>
-      {myFavorites?.map((e, index) => (
+      {myFavorites.map((e) => {
         <Card
-        name={e.name}
-        id={e.id}
-        species={e.species}
-        gender={e.gender}
-        image={e.image}
-        key={e.id}
-        />
-      ))}
+          name={e.name}
+          id={e.id}
+          species={e.species}
+          gender={e.gender}
+          image={e.image}
+          key={e.id}
+        />;
+      })}
     </div>
   );
 }
 
-
-export function mapStateToProps(state){
-    return{
-        myFavorites: state.myFavorites
-    }
+export function mapStateToProps(state) {
+  return {
+    myFavorites: state.myFavorites,
+  };
 }
 
-export default connect(mapStateToProps, null)(Favorites)
+export default connect(mapStateToProps, null)(Favorites);

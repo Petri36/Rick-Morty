@@ -12,7 +12,8 @@ export default function rootReducer(state = initialState, { type, payload }) {
         myFavorites: [...state.myFavorites, payload],
       };
     case DELETE_FAVORITES:
-      const filtered = state.myFavorites.filter((fav) => fav.id !== payload);
+      const filtered = state.myFavorites.filter(
+        fav => fav.id !== payload);
       return {
         ...state,
         myFavorites: filtered,
