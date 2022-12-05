@@ -15,15 +15,14 @@ export default function Form(props) {
   });
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
     setUserData({
       ...userData,
-      [name]: value,
+      [e.target.name]: e.target.value,
     });
     setErrors(
       validate({
         ...userData,
-        [name]: value,
+        [e.target.name]: e.target.value,
       })
     );
   };

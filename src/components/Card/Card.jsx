@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import s from "./card.module.css";
 import { NavLink } from "react-router-dom";
-import { addFavorites, deleteFavorites } from "../../redux/actions";
 import { connect } from "react-redux";
+import { addFavorites, deleteFavorites } from "../../redux/actions";
+import { useState, useEffect } from "react";
 
 export function Card(props) {
   const [isFav, setIsFav] = useState(false);
@@ -13,7 +14,7 @@ export function Card(props) {
       props.deleteFavorites(props.id);
     } else {
       setIsFav(true);
-      props.addFavorites(props.id);
+      props.addFavorites(props);
     }
   }
 
@@ -23,7 +24,8 @@ export function Card(props) {
         setIsFav(true);
       }
     });
-  }, [props.myFavorites, props.id]);
+  }, [props.myFavorites]);
+
 
   return (
     <div className={s.Carta}>
@@ -52,19 +54,15 @@ export function Card(props) {
 
 export function mapDispatchToProps(dispatch) {
   return {
-    addFavorites: function (id) {
-      dispatch(addFavorites(id));
-    },
-    deleteFavorites: function (id) {
-      dispatch(deleteFavorites(id));
-    },
-  };
+    addFavorites: (props) => dispatch(addFavorites(props)),
+    deleteFavorites: (id)=> dispatch(deleteFavorites(id))
+  }
 }
 
 export function mapStateToProps(state) {
   return {
-    myFavorites: state.myFavorites,
-  };
+    myFavorites: state.myFavorites
+  }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Card);
+export default connect(mapStateToProps, {addFavorites, deleteFavorites})(Card);

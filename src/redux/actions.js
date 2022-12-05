@@ -1,15 +1,14 @@
-import { ADD_FAVORITES, DELETE_FAVORITES } from "./types";
+import { DELETE_FAVORITES, ADD_FAVORITES } from "./types";
 
-export function addFavorites(character) {
+export const addFavorites = (props) => {
   return {
     type: ADD_FAVORITES,
-    payload: character,
+    payload: props,
   };
-}
-
-export function deleteFavorites(id) {
+};
+export const deleteFavorites = (id) => {
   return {
     type: DELETE_FAVORITES,
     payload: id,
   };
-}
+};
