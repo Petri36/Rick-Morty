@@ -18,7 +18,7 @@ export default function Cards(props) {
       <div>
         <Nav onSearch={props.onSearch} />
       </div>
-      
+
       <div>
         {props.characters.map((e) => (
           <Card

@@ -4,7 +4,7 @@ import BarraSup from "./components/NavSup/BarraSup.jsx";
 import About from "./components/About/About.jsx";
 import Detail from "./components/Detail/Detail.jsx";
 import Form from "./components/Form/Form.jsx";
-import Favorites from "./components/Favorites/Favorites.jsx" 
+import Favorites from "./components/Favorites/Favorites.jsx";
 import { useState, useEffect } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
@@ -26,12 +26,12 @@ function App() {
   function logout() {
     setAccess(false);
     navigate("/");
-}
+  }
 
   useEffect(() => {
     !access && navigate("/");
   }, [access, navigate]);
-  
+
   const onClose = (id) => {
     setCharacters(characters.filter((char) => char.id !== id));
   };
@@ -57,19 +57,24 @@ function App() {
       if (char.name === data.name) {
         return true;
       }
-    }  
+    }
     return false;
   };
 
   return (
     <div className="App" style={{ padding: "25px" }}>
-      <div>{location.pathname !== "/" && <BarraSup logout={logout}/>}</div>
+      <div>{location.pathname !== "/" && <BarraSup logout={logout} />}</div>
       <Routes>
-
         <Route path="/" element={<Form login={login} />} />
         <Route
           path="/home"
-          element={<Cards characters={characters} onClose={onClose} onSearch={onSearch} />}
+          element={
+            <Cards
+              characters={characters}
+              onClose={onClose}
+              onSearch={onSearch}
+            />
+          }
         />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />} />

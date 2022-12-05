@@ -26,7 +26,6 @@ export function Card(props) {
     });
   }, [props.myFavorites]);
 
-
   return (
     <div className={s.Carta}>
       <NavLink to={`/detail/${props.id}`}>
@@ -55,14 +54,16 @@ export function Card(props) {
 export function mapDispatchToProps(dispatch) {
   return {
     addFavorites: (props) => dispatch(addFavorites(props)),
-    deleteFavorites: (id)=> dispatch(deleteFavorites(id))
-  }
+    deleteFavorites: (id) => dispatch(deleteFavorites(id)),
+  };
 }
 
 export function mapStateToProps(state) {
   return {
-    myFavorites: state.myFavorites
-  }
+    myFavorites: state.myFavorites,
+  };
 }
 
-export default connect(mapStateToProps, {addFavorites, deleteFavorites})(Card);
+export default connect(mapStateToProps, { addFavorites, deleteFavorites })(
+  Card
+);

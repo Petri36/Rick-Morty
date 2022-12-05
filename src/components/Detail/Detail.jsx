@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import React from "react";
-import s from './Detail.module.css'
+import s from "./Detail.module.css";
 
 export default function Detail() {
   const { id } = useParams();

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import s from "./barraSup.module.css";
 
 export default function BarraSup(props) {
-  const { logout } = props
+  const { logout } = props;
   return (
     <div className={s.barra1}>
       <nav className={s.nav1}>
@@ -16,11 +16,10 @@ export default function BarraSup(props) {
         </div>
 
         <NavLink to={"/favorites"}>
-            <button className={s.botonSup1}>
-              <span className={s.spanSup1}>FAVORITES</span>
-            </button>
+          <button className={s.botonSup1}>
+            <span className={s.spanSup1}>FAVORITES</span>
+          </button>
         </NavLink>
-
 
         <NavLink to={"/home"}>
           <button className={s.botonSup2}>

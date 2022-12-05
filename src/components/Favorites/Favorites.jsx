@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 import { connect } from "react-redux";
 import Card from "../Card/Card.jsx";
 
-export function Favorites (props) {
-  console.log(props.myFavorites)
+export function Favorites(props) {
+  console.log(props.myFavorites);
   return (
     <div>
       {props.myFavorites.map((e) => (
