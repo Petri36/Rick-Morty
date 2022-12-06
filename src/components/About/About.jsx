@@ -43,7 +43,8 @@ export default function About(props) {
           href="https://www.instagram.com/jonathanmolero/"
           rel="Jhona"
         >
-          Jhonatan Molero
+          J
+          onathan Molero
         </a>{" "}
       </p>
       <div className={s.aboutBarra}>
