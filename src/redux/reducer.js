@@ -20,7 +20,7 @@ export default function rootReducer(state = initialState, action) {
         (e) => e.id !== action.payload
       );
       return {
-        ...state,
+        allCharacters: filterFavorite,
         myFavorites: filterFavorite,
       };
 
