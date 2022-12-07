@@ -25,25 +25,26 @@ export default function rootReducer(state = initialState, action) {
       };
 
     case FILTER:
-      let filterCopy = [...state.allCharacters];
-      let filter = filterCopy.filter(ch => ch.gender === action.payload);
+      const filtered =
+        action.payload === "All"
+          ? state.allCharacters
+          : state.allCharacters.filter((char) => char.gender === action.payload);
       return {
         ...state,
-        myFavorites: filter,
+        myFavorites: filtered,
       };
 
     case ORDER:
       let orderCopy = [...state.allCharacters];
-        if (action.payload === "Ascendente") {
-          orderCopy.sort((a, b) => a.id - b.id);
-        }
-        else{
-          orderCopy.sort((a, b) => b.id - a.id);
-        }
-        return {
-          ...state,
-          myFavorites: orderCopy,
-        };
+      if (action.payload === "Ascendente") {
+        orderCopy.sort((a, b) => a.id - b.id);
+      } else {
+        orderCopy.sort((a, b) => b.id - a.id);
+      }
+      return {
+        ...state,
+        myFavorites: orderCopy,
+      };
 
     default:
       return state;

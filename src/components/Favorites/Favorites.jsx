@@ -25,6 +25,7 @@ export function Favorites(props) {
           <option value="Descendente">Descendente</option>
         </select>
         <select name="filter" onClick={handleClick}>
+          <option value="All">All</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Genderless">Genderless</option>
