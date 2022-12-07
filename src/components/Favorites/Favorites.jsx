@@ -12,6 +12,8 @@ export function Favorites(props) {
         return dispatch(orderCards(value));
       case "filter":
         return dispatch(filterCards(value));
+      default:
+        break;
     }
   };
 

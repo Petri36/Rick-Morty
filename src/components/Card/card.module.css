@@ -160,10 +160,10 @@
 .botonardo {
   padding: 0 20px 0 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 7px #e7413373;
+  box-shadow: 0px 0px 5px 7px rgb(0, 255, 255);
   background-color: #e7c633;
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   border: none;
   display: flex;
   align-items: center;
@@ -187,13 +187,12 @@
   margin: 0;
   font-family: inherit;
   font-size: inherit;
-  position: relative;
   letter-spacing: 0.05rem;
   font-weight: 700;
   font-size: 15px;
   border-radius: 500px;
   overflow: hidden;
-  background: #66ff66;
+  background: #ff3d3d;
   color: ghostwhite;
  }
  
@@ -220,7 +219,7 @@
  .botonardo::before {
   content: "";
   background: rgb(29, 29, 29);
-  width: 120%;
+  width: 60%;
   left: -10%;
   transform: skew(30deg);
   transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);

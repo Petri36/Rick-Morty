@@ -7,14 +7,12 @@ const initialState = {
 export default function rootReducer(state = initialState, action) {
   switch (action.type) {
     case ADD_FAVORITES:
-      let favs = [...state.myFavorites];
-      let allCh = [...state.allCharacters];
+      let favs = [...state.allCharacters];
       favs.push(action.payload);
-      allCh.push(action.payload);
       return {
         ...state,
         myFavorites: favs,
-        allCharacters: allCh,
+        allCharacters: [...favs],
       };
 
     case DELETE_FAVORITES:
@@ -28,30 +26,24 @@ export default function rootReducer(state = initialState, action) {
 
     case FILTER:
       let filterCopy = [...state.allCharacters];
-      let filter = filterCopy.filter((ch) => ch.gender === action.payload);
+      let filter = filterCopy.filter(ch => ch.gender === action.payload);
       return {
         ...state,
         myFavorites: filter,
       };
 
     case ORDER:
-      let allCharacters = [];
       let orderCopy = [...state.allCharacters];
-      let order = orderCopy.sort((a, b) => {
         if (action.payload === "Ascendente") {
-          order = allCharacters.sort((a, b) => (a.id > b.id ? 1 : -1));
+          orderCopy.sort((a, b) => a.id - b.id);
         }
-        if (action.payload === "Descendente") {
-          order = allCharacters.sort((a, b) => (a.id > b.id ? -1 : 1));
-        }
-        else {
-          return 0
+        else{
+          orderCopy.sort((a, b) => b.id - a.id);
         }
         return {
           ...state,
-          myFavorites: order,
+          myFavorites: orderCopy,
         };
-      });
 
     default:
       return state;

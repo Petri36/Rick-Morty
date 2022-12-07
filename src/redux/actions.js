@@ -18,9 +18,9 @@ export const filterCards = (status) => {
     payload: status,
   };
 };
-export const orderCards = (id) => {
+export const orderCards = (order) => {
   return {
     type: ORDER,
-    payload: id,
+    payload: order,
   };
 };

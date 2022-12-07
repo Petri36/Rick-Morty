@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import { addFavorites, deleteFavorites } from "../../redux/actions";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export function Card(props) {
   const [isFav, setIsFav] = useState(false);
@@ -39,14 +40,20 @@ export function Card(props) {
       <h2>{props.gender}</h2>
 
       {isFav ? (
-        <button onClick={handleFavorite} className={s.botonardo}><span>❤️</span></button>
+        <button onClick={handleFavorite} className={s.botonardo}>
+          <span>❤️</span>
+        </button>
       ) : (
-        <button onClick={handleFavorite} className={s.botonardo}><span>🤍</span></button>
+        <button onClick={handleFavorite} className={s.botonardo}>
+          <span>🤍</span>
+        </button>
       )}
 
-      <button className={s.btn} onClick={() => props.onClose(props.id)}>
-        <span className={s.Span}>CERRAR</span>
-      </button>
+      {useLocation().pathname !== "/favorites" && (
+        <button className={s.btn} onClick={() => props.onClose(props.id)}>
+          <span className={s.Span}>CLOSE</span>
+        </button>
+      )}
     </div>
   );
 }
