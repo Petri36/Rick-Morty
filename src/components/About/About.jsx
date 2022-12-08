@@ -7,7 +7,7 @@ export default function About(props) {
   return (
     <div className={s.aboutDiv}>
       <img
-        src="https://avatars.githubusercontent.com/u/109110678?v=4"
+        src="https://pbs.twimg.com/profile_images/1493993280777990146/LkNI0Mst_400x400.jpg"
         alt="Foto de Petri"
         width="25%"
         height="auto"
@@ -23,7 +23,7 @@ export default function About(props) {
           Agustín Petrini
         </a>{" "}
         , autor de la página en la cual nos encontramos. Este es mi primer
-        proyecto, el cual realicé para el BootCamp Soyhenry, en el módulo de
+        proyecto, el cual realicé para el BootCamp SoyHenry, en el módulo de
         FrontEnd (M2).
       </p>
       <p className={s.aboutP}>
@@ -41,7 +41,7 @@ export default function About(props) {
         <a
           className={s.aboutA}
           href="https://www.instagram.com/jonathanmolero/"
-          rel="Jhona"
+          rel="Jonathan"
         >
           Jonathan Molero
         </a>{" "}
@@ -53,7 +53,7 @@ export default function About(props) {
             navigate("/home");
           }}
         >
-          <span className={s.aboutSpan}>VOLVER</span>
+          <span className={s.aboutSpan}>RETURN</span>
         </button>
       </div>
     </div>
