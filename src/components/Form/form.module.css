@@ -61,10 +61,10 @@
   }
   
   .inputuser:focus {
-    color: rgb(0, 255, 255);
+    color: rgb(255, 255, 0);
     background-color: #212121;
-    outline-color: rgb(0, 255, 255);
-    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    outline-color: rgb(255, 255, 0);
+    box-shadow: -3px -3px 15px rgb(255, 255, 0);
     transition: .1s;
     transition-property: box-shadow;
   }
@@ -85,10 +85,10 @@
   }
   
   .inputpass:focus {
-    color: rgb(0, 255, 255);
+    color: rgb(255, 255, 0);
     background-color: #212121;
-    outline-color: rgb(0, 255, 255);
-    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    outline-color: rgb(255, 255, 0);
+    box-shadow: -3px -3px 15px rgb(255, 255, 0);
     transition: .1s;
     transition-property: box-shadow;
   }
@@ -104,4 +104,10 @@
     letter-spacing: 2px;
   }
 
-  
+  .loginDiv{
+    border-radius: 30px;
+    border: solid black 1px;
+    width: 274px;
+    background-color: rgba(255, 255, 255, 0.404);
+
+  }
