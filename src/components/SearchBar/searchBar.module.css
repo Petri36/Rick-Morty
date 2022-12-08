@@ -1,4 +1,4 @@
-.Barra {
+.barra {
   display: inline-block;
   margin-bottom: 5rem;
   border: solid 5px;
@@ -9,7 +9,7 @@
   background-color: rgba(0, 0, 0, 0.837);
 }
 
-.Input {
+.input {
   min-height: 45px;
   max-width: 15em;
   padding: 0 1rem;
@@ -21,7 +21,7 @@
   background-color: #000000c9;
 }
 
-.Input:focus {
+.input:focus {
   color: rgb(0, 255, 255);
   background-color: #212121;
   outline-color: rgb(0, 255, 255);
@@ -30,14 +30,14 @@
   transition-property: box-shadow;
 }
 
-.Button {
+.addbutton {
   text-decoration: none;
   position: 0;
   border: none;
   font-size: 15px;
   font-family: inherit;
   color: rgb(0, 0, 0);
-  width: 15em;
+  width: 14em;
   height: 2.8em;
   line-height: 2em;
   text-align: center;
@@ -49,7 +49,7 @@
   cursor: pointer;
 }
 
-.Button:hover {
+.addbutton:hover {
   animation: ani 8s linear infinite;
   border: none;
   border: 3px solid black;
@@ -65,7 +65,7 @@
   }
 }
 
-.Button:before {
+.addbutton:before {
   content: "";
   position: 0;
   top: -5px;
@@ -79,11 +79,11 @@
   transition: 1s;
 }
 
-.Button:hover::before {
+.addbutton:hover::before {
   filter: blur(20px);
 }
 
-.Button:active {
+.addbutton:active {
   background: linear-gradient(90deg, #ffc400b9,  #6d6231, #585544, #000000);
 }
 
@@ -91,14 +91,14 @@
   font-weight: bold;
 }
 
-.Button2 {
+.randombutton {
   text-decoration: none;
   position: 0;
   border: none;
   font-size: 15px;
   font-family: inherit;
   color: rgb(0, 0, 0);
-  width: 15em;
+  width: 14em;
   height: 2.8em;
   line-height: 2em;
   text-align: center;
@@ -110,7 +110,7 @@
   cursor: pointer;
 }
 
-.Button2:hover {
+.randombutton:hover {
   animation: ani 8s linear infinite;
   border: none;
   border: 3px solid black;
@@ -126,7 +126,7 @@
   }
 }
 
-.Button2:before {
+.randombutton:before {
   content: "";
   position: 0;
   top: -5px;
@@ -140,11 +140,11 @@
   transition: 1s;
 }
 
-.Button2:hover::before {
+.randombutton:hover::before {
   filter: blur(20px);
 }
 
-.Button2:active {
+.randombutton:active {
   background: linear-gradient(90deg, #ffc400b9,  #6d6231, #585544, #000000);
 }
 
@@ -153,7 +153,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .Barra {
+  .barra {
     display: inline-block;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +161,7 @@
     margin-inline-end: 1cm;
     margin-left: 10px;
   }
-  .Input {
+  .input {
     border-radius: 20px;
     margin: 8px;
   }
@@ -169,7 +169,7 @@
     border-radius: 20px;
     margin: 8px;
   }
-  .Button2 {
+  .randombutton {
     border-radius: 20px;
     margin: 8px;
   }

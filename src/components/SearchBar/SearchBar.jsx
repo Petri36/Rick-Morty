@@ -9,20 +9,20 @@ export default function SearchBar(props) {
   };
 
   return (
-    <div className={s.Barra}>
+    <div className={s.barra}>
       <input
-        className={s.Input}
+        className={s.input}
         placeholder="Número del 1 al 826"
         type="search"
         onChange={infoInput}
       />
 
-      <button className={s.Button} onClick={() => props.onSearch(id)}>
+      <button className={s.addbutton} onClick={() => props.onSearch(id)}>
         <span className={s.Span}>ADD</span>
       </button>
 
       <button
-        className={s.Button2}
+        className={s.randombutton}
         onClick={() => props.onSearch(Math.floor(Math.random() * 826))}
       >
         <span className={s.Span}>RANDOM</span>

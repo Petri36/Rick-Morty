@@ -29,9 +29,9 @@ export function Card(props) {
 
   return (
     <div className={s.Carta}>
-      <NavLink to={`/detail/${props.id}`}>
-        <button className={s.cardBoton}>
-          <span className={s.cardSpan}>{props.name}</span>
+      <NavLink className={s.td} to={`/detail/${props.id}`}>
+        <button className={s.descriptionbtn}>
+          <span className={s.cardfont}>{props.name}</span>
         </button>
       </NavLink>
 
@@ -39,6 +39,11 @@ export function Card(props) {
       <h2>{props.species}</h2>
       <h2>{props.gender}</h2>
 
+      {useLocation().pathname !== "/favorites" && (
+        <button className={s.closebtn} onClick={() => props.onClose(props.id)}>
+          <span className={s.Span}>CLOSE</span>
+        </button>
+      )}
       {isFav ? (
         <button onClick={handleFavorite} className={s.botonardo}>
           <span>❤️</span>
@@ -46,12 +51,6 @@ export function Card(props) {
       ) : (
         <button onClick={handleFavorite} className={s.botonardo}>
           <span>🤍</span>
-        </button>
-      )}
-
-      {useLocation().pathname !== "/favorites" && (
-        <button className={s.btn} onClick={() => props.onClose(props.id)}>
-          <span className={s.Span}>CLOSE</span>
         </button>
       )}
     </div>

@@ -68,6 +68,8 @@ export default function Form(props) {
         <button type="submit" className={s.button}>
           Login
         </button>
+        <p><tt><mark>|*| <b><u>User</u>:</b> ejemplo@gmail.com |*|</mark></tt></p>
+        <p><tt><mark>|*| <b><u>Password</u>:</b> 1password |*|</mark></tt></p>
       </form>
     </div>
   );

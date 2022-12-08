@@ -35,7 +35,7 @@ export default function rootReducer(state = initialState, action) {
       };
 
     case ORDER:
-      let orderCopy = [...state.allCharacters];
+      let orderCopy = [...state.myFavorites];
       if (action.payload === "Ascendente") {
         orderCopy.sort((a, b) => a.id - b.id);
       } else {
@@ -50,3 +50,4 @@ export default function rootReducer(state = initialState, action) {
       return state;
   }
 }
+

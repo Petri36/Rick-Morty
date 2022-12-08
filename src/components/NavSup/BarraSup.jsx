@@ -17,7 +17,7 @@ export default function BarraSup(props) {
 
         <NavLink to={"/favorites"}>
           <button className={s.botonSup1}>
-            <span className={s.spanSup1}>FAVORITES</span>
+            <span className={s.spanSup1}>FAVORITES💖</span>
           </button>
         </NavLink>
 
@@ -26,8 +26,8 @@ export default function BarraSup(props) {
             <span className={s.spanSup2}>HOME</span>
           </button>
 
-          <button onClick={() => logout()} className={s.button}>
-            Logout
+          <button onClick={() => logout()} className={s.logout}>
+          ⬅️Logout
           </button>
         </NavLink>
       </nav>

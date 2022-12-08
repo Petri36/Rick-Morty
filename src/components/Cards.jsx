@@ -3,8 +3,6 @@ import Card from "./Card/Card";
 import Nav from "./Nav";
 
 export default function Cards(props) {
-  //const { characters } = props;
-
   return (
     <div>
       <div>
