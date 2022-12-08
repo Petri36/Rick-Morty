@@ -28,7 +28,9 @@ export default function rootReducer(state = initialState, action) {
       const filtered =
         action.payload === "All"
           ? state.allCharacters
-          : state.allCharacters.filter((char) => char.gender === action.payload);
+          : state.allCharacters.filter(
+              (char) => char.gender === action.payload
+            );
       return {
         ...state,
         myFavorites: filtered,
@@ -50,4 +52,3 @@ export default function rootReducer(state = initialState, action) {
       return state;
   }
 }
-

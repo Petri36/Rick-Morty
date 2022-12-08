@@ -2,7 +2,7 @@ import React from "react";
 import { connect, useDispatch } from "react-redux";
 import { filterCards, orderCards } from "../../redux/actions.js";
 import Card from "../Card/Card.jsx";
-import s from './favorites.module.css'
+import s from "./favorites.module.css";
 
 export function Favorites(props) {
   const dispatch = useDispatch();

@@ -27,7 +27,7 @@ export default function BarraSup(props) {
           </button>
 
           <button onClick={() => logout()} className={s.logout}>
-          ⬅️Logout
+            ⬅️Logout
           </button>
         </NavLink>
       </nav>
