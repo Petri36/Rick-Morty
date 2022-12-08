@@ -8,7 +8,7 @@ export default function Cards(props) {
       <div>
         <img
           className="Title"
-          src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png"
+          src="https://cdn.shopify.com/s/files/1/0276/0671/2393/collections/RICK_MORTY.png?v=1664371958"
           alt=""
         />
       </div>

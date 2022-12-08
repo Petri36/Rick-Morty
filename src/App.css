@@ -19,7 +19,8 @@ body{
    align-items: center;
    justify-content: center;
    margin-left: 70px;
-   margin-top: -60px;
+   margin-top: 0px;
+   margin-bottom: 6rem;
 }
 
 @media screen and (max-width: 500px ){
