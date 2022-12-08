@@ -50,7 +50,7 @@ export default function Detail() {
               navigate("/home");
             }}
           >
-            <span className={s.spanDetalle}>VOLVER</span>
+            <span className={s.spanDetalle}>RETURN</span>
           </button>
         </div>
       </div>
