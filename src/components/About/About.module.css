@@ -1,8 +1,8 @@
 .aboutDiv{
   border-radius: 60px;
   background-color: rgba(240, 248, 255, 0.653);
-  outline-color: rgb(0, 225, 255);
-  box-shadow: -3px -3px 15px rgb(0, 225, 255);
+  outline-color: rgb(255, 255, 0);
+  box-shadow: -3px -3px 15px rgb(255, 255, 0);
   padding: 3rem;
 }
 
