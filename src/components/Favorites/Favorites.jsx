@@ -6,31 +6,40 @@ import s from "./favorites.module.css";
 
 export function Favorites(props) {
   const dispatch = useDispatch();
-  const handleClick = (e) => {
-    const { name, value } = e.target;
-    switch (name) {
-      case "order":
-        return dispatch(orderCards(value));
-      case "filter":
-        return dispatch(filterCards(value));
-      default:
-        break;
-    }
-  };
 
   return (
     <div>
       <div>
-        <select className={s.dropdown} name="order" onClick={handleClick}>
-          <option value="Ascendente">Ascendente</option>
-          <option value="Descendente">Descendente</option>
+        <select
+          className={s.dropdown}
+          onChange={(e) => dispatch(orderCards(e.target.value))}
+        >
+          <option className={s.dropdown} value="Ascendente">
+            Ascendente
+          </option>
+          <option className={s.dropdown} value="Descendente">
+            Descendente
+          </option>
         </select>
-        <select className={s.dropdown} name="filter" onClick={handleClick}>
-          <option value="All">All</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Genderless">Genderless</option>
-          <option value="Unknow">Unknow</option>
+        <select
+          className={s.dropdown}
+          onChange={(e) => dispatch(filterCards(e.target.value))}
+        >
+          <option className={s.dropdown} value="All">
+            All
+          </option>
+          <option className={s.dropdown} value="Male">
+            Male
+          </option>
+          <option className={s.dropdown} value="Female">
+            Female
+          </option>
+          <option className={s.dropdown} value="Genderless">
+            Genderless
+          </option>
+          <option className={s.dropdown} value="Unknow">
+            Unknow
+          </option>
         </select>
       </div>
       {props.myFavorites.map((e) => (

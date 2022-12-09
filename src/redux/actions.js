@@ -12,10 +12,10 @@ export const deleteFavorites = (id) => {
     payload: id,
   };
 };
-export const filterCards = (status) => {
+export const filterCards = (gender) => {
   return {
     type: FILTER,
-    payload: status,
+    payload: gender,
   };
 };
 export const orderCards = (order) => {
