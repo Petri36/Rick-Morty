@@ -37,8 +37,8 @@ export function Favorites(props) {
           <option className={s.dropdown} value="Genderless">
             Genderless
           </option>
-          <option className={s.dropdown} value="Unknow">
-            Unknow
+          <option className={s.dropdown} value="unknown">
+            Unknown
           </option>
         </select>
       </div>
