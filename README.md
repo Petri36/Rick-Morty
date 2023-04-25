@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+Rick and Morty API
+Este repositorio contiene una aplicación web que consume la API pública de "Rick and Morty" para mostrar información sobre los personajes, episodios y ubicaciones de la serie animada.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La aplicación está desarrollada en JavaScript utilizando el framework React, y se utiliza la librería axios para hacer las peticiones a la API.
 
-## Available Scripts
+Uso
+Para utilizar esta aplicación, simplemente sigue estos pasos:
 
-In the project directory, you can run:
+Clona este repositorio en tu ordenador: git clone https://github.com/noedenisel/Rick-and-Morty.git
+Accede al directorio del proyecto: cd Rick-and-Morty
+Instala las dependencias necesarias: npm install
+Inicia la aplicación: npm start
+Abre tu navegador web y accede a la dirección http://localhost:3000/
+Una vez en la aplicación, podrás navegar entre las diferentes secciones y buscar información sobre tus favoritos de "Rick and Morty".
 
-### `npm start`
+Contribuciones
+Si deseas contribuir al desarrollo de esta aplicación, por favor sigue estos pasos:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Haz un fork de este repositorio en tu cuenta de GitHub.
+Clona tu repositorio fork en tu ordenador: git clone https://github.com/TU_NOMBRE_DE_USUARIO/Rick-and-Morty.git
+Crea una rama para tus cambios: git checkout -b mi-rama
+Realiza tus cambios y guarda los archivos modificados.
+Confirma los cambios en tu repositorio: git commit -am "Mi mensaje de confirmación"
+Sube los cambios a tu repositorio en GitHub: git push origin mi-rama
+Crea un Pull Request en este repositorio desde la página de GitHub.
